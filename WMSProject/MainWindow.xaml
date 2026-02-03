@@ -13,6 +13,6 @@
     </Window.DataContext>
     <StackPanel Orientation="Vertical">
         <Label>Név: </Label>
-        <TextBlock>Kiss Anna</TextBlock>
+        <TextBlock Text="{Binding Name}"/>
     </StackPanel>
 </Window>

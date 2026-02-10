@@ -8,15 +8,23 @@
         Title="MainWindow" Height="450" Width="800">
     <Window.DataContext>
         <local:EmployeeViewModel>
-            
+
         </local:EmployeeViewModel>
     </Window.DataContext>
-    <StackPanel Orientation="Vertical">
-        <Label>Név: </Label>
-        <TextBlock Text="{Binding Name}"/>
-        <Label>Adószám: </Label>
-        <TextBlock Text="{Binding TaxNumber}"/>
-        <Label>Szabad napok száma: </Label>
-        <TextBlock Text="{Binding DaysOff}"/>
-    </StackPanel>
+    <WrapPanel>
+        <Border BorderBrush="Black"
+                BorderThickness="4"
+                CornerRadius="10"
+                Padding="4"
+                Margin="4">
+            <StackPanel Orientation="Vertical">
+                <Label FontWeight="Bold">Név:</Label>
+                <TextBlock Text="{Binding Name} " Margin="5 0 0 0"/>
+                <Label FontWeight="Bold">Adószám:</Label>
+                <TextBlock Text="{Binding TaxNumber}" Margin="5 0 0 0"/>
+                <Label FontWeight="Bold">Kivett szabadnapok száma:</Label>
+                <TextBlock Text="{Binding DaysOff}" Margin="5 0 0 0"/>
+            </StackPanel>
+        </Border>
+    </WrapPanel>
 </Window>

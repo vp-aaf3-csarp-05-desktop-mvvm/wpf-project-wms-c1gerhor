@@ -1,2 +1,5 @@
-# 00-00-00-empty-project
-Empty project
+# Grafikus alkalmazásfejlesztés ipari szemlélettel
+
+## Tartalomjegyzék
+
+1. [MVVM és binding](./docs/mvvm/mvvm-binding.md)
